@@ -1,0 +1,188 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    background: #8dc653;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+    background-color: #8dc653;
+    padding-left: 20vh;
+    padding-right: 20vh;
+}
+
+.stars img, .cup img {
+    size: 100vh;
+    margin-top: -20vh;
+}
+.cup img {
+    margin-top: -40vh;
+}
+.cheer h1, .cheer h2 {
+    margin: 0;
+    padding: 0;
+    color: #ffffff;
+}
+
+.cheer h1 {
+    font-size: 10vh;
+    margin-top: 4vh;
+}
+
+.cheer h2 {
+    font-size: 5vh;
+}
+button.playagain {
+    padding: 10px 20px;
+    font-size: 20px;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    border: solid white;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+button.playagain:hover {
+    background-color: #c1d2c6;
+}
+.rules-box {
+    background-color: #174F32;
+    color: white;
+    width: 300px;
+    position: relative;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    margin-left: 170vh;
+    margin-top: -55vh;
+    padding-left: 2vh;
+    padding-right: 2vh;
+    padding-top: 3vh;
+    padding-bottom: 3vh;
+    border: 10px solid white;
+    border-radius: 10px;
+}
+
+.rules-box h2 {
+    margin-top: 0;
+    background-color: #174F32;
+    font-size: 40px;
+    padding-left: 5vh;
+    padding-bottom: 3vh;
+}
+
+.rules-box ul {
+    list-style-type: none;
+    padding-left: 0;
+    background-color: #174F32;
+}
+
+.rules-box ul li {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: start;
+    background-color: #174F32;
+}
+
+.rules-box ul li:before {
+    content: '▪';
+    color: yellow;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.close-btn {
+    position: absolute;
+    top: -30px;
+    right: -30px;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    font-size: 30px;
+    border: 5px solid white;
+}
+
+.close-btn:hover {
+    background-color: darkred;
+}
+
+.rules-button {
+    border: 4px solid white;
+    font-size: 30px;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+    padding-left: 2vh;
+    padding-right: 2vh;
+    border-radius: 10px;
+    cursor: pointer;
+    color: white;
+    font-weight: bolder;
+}
+
+.rules-button:hover {
+    background: darkgreen;
+}
+.rules-button {
+    background-color: #20a348;
+    margin-left: 120vh;
+    margin-bottom: -20vh;
+}
+
+.stars img {
+    animation: twinkle 2s infinite;
+}
+
+.cup img {
+    animation: bounce 1.5s ease-in-out infinite;
+}
+
+@keyframes twinkle {
+    0%, 100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+    50% {
+        opacity: 0.5;
+        transform: scale(1.2);
+    }
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+}
